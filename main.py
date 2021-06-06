@@ -35,6 +35,7 @@ class EncryptQr:
         f = Fernet(self.key)
         encrypt_message = f.encrypt(self.message)
         img = qrcode.make(encrypt_message)
+        print(f"The Qrcode is saved in {sys.path[0]}\QRCode.png")
         img.save("QRCode.png")
 
     # Read's qrcode and decrypt the message
@@ -62,10 +63,9 @@ if __name__ == '__main__':
 
     if num == "0":
         word = input("Enter The Word That You What Encrypt: ")
-        password = input("Password: ")
+        password = input("Please Note If You Lose The Password The Data Can't Be Recovered\nPassword: ")
         enc = EncryptQr(word, password)
         enc.encrypt()
-        print(f"The Qrcode is saved in {sys.path[0]}\QRCode.png")
     elif num == "1":
         password = input("Password: ")
         enc = EncryptQr('none', password)

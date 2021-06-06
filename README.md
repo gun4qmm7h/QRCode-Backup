@@ -22,4 +22,5 @@ Once you run all the commands, run main.py
 
 
 ##Inspiration
+
 This script was inspired by sunknudsen project: [qr-backup](https://github.com/sunknudsen/qr-backup)

@@ -20,6 +20,11 @@ pip3 install -r requirement.txt
 ```
 Once you run all the commands, run main.py
 
+## Use for quick testing
+`"python3 main.py -e -w 'this is a test' -p password"`
+
+`"python3 main.py -de -p password"`
+
 
 ## Inspiration
 

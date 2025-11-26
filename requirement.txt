@@ -1,4 +1,4 @@
 cryptography
 qrcode
 opencv-python
-pyzbar
+PIL
